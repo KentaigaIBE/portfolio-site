@@ -16,12 +16,84 @@
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@property --color-a {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --color-b {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --color-c {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --color-d {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --new-color-a {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --new-color-b {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --new-color-c {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --new-color-d {
+  syntax: "<color>";
+  initial-value: rgb(0, 0, 0);
+  inherits: true;
+}
+
+@property --new-gradient-opacity {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.animated-gradient {
+  background-image: linear-gradient(
+    -45deg,
+    var(--color-a),
+    var(--color-b),
+    var(--color-c),
+    var(--color-d)
+  );
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  transition: background-image 2s ease-in-out;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
