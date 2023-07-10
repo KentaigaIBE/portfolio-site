@@ -1,41 +1,40 @@
+import ProjectPreview from "@/components/common/project-preview";
 import TimelineProject from "@/components/common/timeline-project";
+import Link from "next/link";
 
 export default function Apps() {
   return (
-    <main className="flex min-h-screen flex-col items-center pw-24 h-screen animated-gradient">
-      <div className="absolute bg-orange-400 w-5 h-full z-[5] drop-shadow-lg"></div>
-      <TimelineProject
-        name={"Virtualso"}
-        link={"/apps/virtualso"}
-        position={"left"}
-        date={"June 28th, 2023"}
-        imageSrc={
-          "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/portfolio-site.png"
-        }
-        backgroundColor={
-          "linear-gradient(-45deg, #eeaeca, #94bbe9, #eeaeca, #eeaeca)"
-        }
-        colorA={"rgb(238, 174, 202)"}
-        colorB={"rgb(148, 187, 233)"}
-        colorC={"rgb(238, 174, 202)"}
-        colorD={"rgb(238, 174, 202)"}
-      ></TimelineProject>
-      <TimelineProject
-        name={"My Portfolio"}
-        link={"/apps/portfolio"}
-        position={"right"}
-        date={"June 13th, 2023"}
-        imageSrc={
-          "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/portfolio-site.png"
-        }
-        backgroundColor={
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
-        }
-        colorA={"rgb(238, 119, 82)"}
-        colorB={"rgb(231, 60, 126)"}
-        colorC={"rgb(35, 166, 213)"}
-        colorD={"rgb(35, 213, 171)"}
-      ></TimelineProject>
+    <main className="flex flex-col min-h-screen items-center pw-24 animated-gradient overflow-x-clip">
+      <div className="fixed h-12 w-screen bg-white drop-shadow-lg z-40">
+        <Link href={"/"}>
+          <button className="fixed right-12 top-6 bg-orange-400 w-12 h-12 z-50 drop-shadow-lg"></button>
+        </Link>
+      </div>
+      <h1 className="fixed top-2 text-orange-300 font-bold text-3xl z-50">
+        Apps & Sites
+      </h1>
+      <div className="">
+        <ProjectPreview
+          name={"Skulk"}
+          textSize={"text-[125px] group-hover:text-[175px]"}
+          textColor={"text-slate-300"}
+          link={"/games/skulk"}
+          color={"bg-slate-200"}
+          image={
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+          }
+        ></ProjectPreview>
+        <ProjectPreview
+          name={"Pride And Accomplishment"}
+          textSize={"text-[75px] group-hover:text-[100px]"}
+          textColor={"text-blue-300"}
+          link={"/games/pride-and-accomplishment"}
+          color={"bg-blue-200"}
+          image={
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+          }
+        ></ProjectPreview>
+      </div>
     </main>
   );
 }
