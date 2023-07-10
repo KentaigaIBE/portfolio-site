@@ -1,6 +1,4 @@
 import "./globals.css";
-import "./transition.css";
-import Transition from "../components/common/transition";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
