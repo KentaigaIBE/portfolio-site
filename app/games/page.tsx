@@ -1,17 +1,11 @@
 import ProjectPreview from "@/components/common/project-preview";
+import SimpleTopbar from "@/components/common/simple-topbar";
 import Link from "next/link";
 
 export default function Games() {
   return (
     <main className="flex flex-col min-h-screen items-center pw-24 animated-gradient overflow-x-clip">
-      <div className="fixed h-12 w-screen bg-white drop-shadow-lg z-40">
-        <Link href={"/"}>
-          <button className="fixed right-12 top-6 bg-orange-400 w-12 h-12 z-50 drop-shadow-lg"></button>
-        </Link>
-      </div>
-      <h1 className="fixed top-2 text-orange-300 font-bold text-3xl z-50">
-        Games
-      </h1>
+      <SimpleTopbar title={"Games"} upSrc={"/"}></SimpleTopbar>
       <div className="">
         <ProjectPreview
           name={"Skulk"}
