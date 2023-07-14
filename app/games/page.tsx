@@ -24,7 +24,7 @@ export default function Games() {
           link={"/games/pride-and-accomplishment"}
           color={"bg-blue-200"}
           image={
-            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment.webp"
           }
         ></ProjectPreview>
       </div>
