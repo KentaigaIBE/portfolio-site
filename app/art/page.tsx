@@ -14,20 +14,20 @@ export default function Art() {
       </h1>
       <div className="">
         <ProjectPreview
-          name={"Skulk"}
-          textSize={"text-[125px] group-hover:text-[175px]"}
-          textColor={"text-slate-300"}
-          link={"/games/skulk"}
+          name={"Dua Lipa Spotify Canvases"}
+          textSize={"text-[75px] group-hover:text-[100px]"}
+          textColor={"text-pink-300"}
+          link={"/art/dua-lipa-spotify"}
           color={"bg-slate-200"}
           image={
-            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/DuaLipaLoops.webp"
           }
         ></ProjectPreview>
         <ProjectPreview
-          name={"Pride And Accomplishment"}
-          textSize={"text-[75px] group-hover:text-[100px]"}
-          textColor={"text-blue-300"}
-          link={"/games/pride-and-accomplishment"}
+          name={"Take a Chance"}
+          textSize={"text-[125px] group-hover:text-[175px]"}
+          textColor={"text-indigo-300"}
+          link={"/art/take-a-chance"}
           color={"bg-blue-200"}
           image={
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
