@@ -27,7 +27,7 @@ export default function Art() {
           link={"/art/take-a-chance"}
           color={"bg-blue-200"}
           image={
-            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-wormhole.webp"
           }
         ></ProjectPreview>
       </div>

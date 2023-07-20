@@ -14,9 +14,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("vidstack/tailwind.cjs")({
-      prefix: "video",
-    }),
-  ],
+  plugins: [require("vidstack/tailwind.cjs")],
 };

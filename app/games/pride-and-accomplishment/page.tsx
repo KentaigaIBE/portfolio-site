@@ -128,7 +128,6 @@ export default function PrideAndAccomplishment() {
         </p>
         <div className="relative left-1/4 w-1/2 my-8">
           <MediaPlayer
-            className=""
             title="Pride and Accomplishment Demo"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
             load="idle"
