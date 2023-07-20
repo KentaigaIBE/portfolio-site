@@ -3,27 +3,29 @@ import SimpleTopbar from "@/components/common/simple-topbar";
 
 export default function Apps() {
   return (
-    <main className="flex flex-col min-h-screen items-center pw-24 animated-gradient overflow-x-clip">
+    <main className="flex flex-col min-h-screen items-center pw-24 overflow-x-clip">
       <SimpleTopbar title={"Apps & Sites"} upSrc={"/"}></SimpleTopbar>
       <div className="">
         <ProjectPreview
-          name={"Skulk"}
+          name={"Virtualso"}
           textSize={"text-[125px] group-hover:text-[175px]"}
-          textColor={"text-slate-300"}
-          link={"/games/skulk"}
-          color={"bg-slate-200"}
+          textColor={"text-blue-300"}
+          link={"/apps/virtualso"}
+          color={"bg-blue-200"}
+          blurOnHover
           image={
-            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/virtualso-scope-analysis.webp"
           }
         ></ProjectPreview>
         <ProjectPreview
-          name={"Pride And Accomplishment"}
-          textSize={"text-[75px] group-hover:text-[100px]"}
-          textColor={"text-blue-300"}
-          link={"/games/pride-and-accomplishment"}
-          color={"bg-blue-200"}
+          name={"My Portfolio"}
+          textSize={"text-[125px] group-hover:text-[175px]"}
+          textColor={"text-white"}
+          link={"/apps/portfolio"}
+          color={"bg-orange-200"}
+          blurOnHover
           image={
-            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/portfolio-home.webp"
           }
         ></ProjectPreview>
       </div>
