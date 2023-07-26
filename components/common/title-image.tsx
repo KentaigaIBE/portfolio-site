@@ -8,7 +8,7 @@ export default function TitleImage(props: any) {
     imageClass += ` ${props.blur}`;
   }
   return (
-    <div className="relative top-12 overflow-x-clip h-96 mb-12">
+    <div className="relative top-12 w-full overflow-x-clip h-96 mb-12">
       <Image
         className={imageClass}
         src={props.image}
