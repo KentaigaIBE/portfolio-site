@@ -16,84 +16,35 @@
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@property --color-a {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --color-b {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --color-c {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --color-d {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --new-color-a {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --new-color-b {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --new-color-c {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --new-color-d {
-  syntax: "<color>";
-  initial-value: rgb(0, 0, 0);
-  inherits: true;
-}
-
-@property --new-gradient-opacity {
-  syntax: "<percentage>";
-  initial-value: 0%;
-  inherits: true;
-}
-
-.animated-gradient {
-  background-image: linear-gradient(
-    -45deg,
-    var(--color-a),
-    var(--color-b),
-    var(--color-c),
-    var(--color-d)
-  );
-  background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
-  transition: background-image 2s ease-in-out;
-}
-
 body {
+  background: linear-gradient(
+    to bottom right,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  color: rgb(var(--foreground-rgb));
+}
+
+// Videos
+
+:where(media-outlet) {
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--media-outlet-bg-color, black);
+}
+
+:where(media-player[data-fullscreen] media-outlet) {
+  height: 100%;
+}
+
+/* This is what ensures the video always fills as much space as possible without clipping while in fullscreen */
+:where(media-player[data-fullscreen] > media-outlet > shadow-root > *) {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+}
+
+:where(media-player > media-outlet > shadow-root > *) {
+  width: 100% !important;
 }

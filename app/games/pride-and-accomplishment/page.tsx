@@ -27,7 +27,7 @@ export default function PrideAndAccomplishment() {
       ></SimpleTopbar>
       <TitleImage
         name={"Pride and Accomplishment"}
-        textSize={"text-[75px]"}
+        textSize={"text-[25px] sm:text-[35px] md:text-[75px]"}
         textColor={"text-blue-300"}
         color={"bg-blue-200"}
         blur={"blur-[3px]"}
@@ -36,7 +36,7 @@ export default function PrideAndAccomplishment() {
         }
       ></TitleImage>
       {/* Body conent */}
-      <div className="text-black dark:text-white my-8 mx-4">
+      <div className="text-black dark:text-white my-8 mx-4 w-screen p-4">
         <h1 className={h1Class} id="introduction">
           Introduction
         </h1>
@@ -126,7 +126,7 @@ export default function PrideAndAccomplishment() {
           box experience: vapid rewards that are not worth the price of
           admission.
         </p>
-        <div className="relative left-1/4 w-1/2 my-8">
+        <div className="relative md:left-1/4 md:w-1/2 my-8">
           <MediaPlayer
             title="Pride and Accomplishment Demo"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
@@ -287,7 +287,7 @@ export default function PrideAndAccomplishment() {
           on an actual computer (not a phone).
         </p>
         <iframe
-          className="mt-4"
+          className="mt-4 max-w-full"
           src="https://itch.io/embed/1311842?bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636"
           width="552"
           height="167"

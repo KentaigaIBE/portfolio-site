@@ -11,14 +11,14 @@ export default function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
 
   return (
-    <main className="flex bg-white dark:bg-black min-h-screen flex-col items-center pw-24 overflow-x-clip">
+    <main className="flex min-h-screen flex-col overflow-x-clip">
       <SimpleTopbar
         title={"Dua Lipa Spotify Canvases"}
         upSrc={"/art"}
       ></SimpleTopbar>
       <TitleImage
         name={"Dua Lipa Spotify Canvases"}
-        textSize={"text-[75px]"}
+        textSize={"text-[30px] md:text-[75px]"}
         textColor={"text-pink-300"}
         color={"text-pink-200"}
         blur={"blur-[3px]"}
@@ -27,7 +27,7 @@ export default function DuaLipaSpotify() {
         }
       ></TitleImage>
       {/* Body conent */}
-      <div className="text-black dark:text-white my-8 mx-4">
+      <div className="my-8 mx-8">
         <h1 className={h1Class} id="overview">
           Overview
         </h1>
@@ -45,9 +45,9 @@ export default function DuaLipaSpotify() {
         <h1 className={h1Class} id="videos">
           Videos
         </h1>
-        <div className="flex flex-row mt-8 w-[98vw] justify-between">
+        <div className="flex flex-col sm:flex-row mt-8 w-[98vw] justify-between items-center space-y-4">
           <MediaPlayer
-            className="w-1/4"
+            className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
             load="eager"
@@ -59,7 +59,7 @@ export default function DuaLipaSpotify() {
             <MediaOutlet />
           </MediaPlayer>
           <MediaPlayer
-            className="w-1/4"
+            className="w-2/3 sm:w-1/4"
             title="Break My Heart Loop"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
             load="eager"
@@ -71,7 +71,7 @@ export default function DuaLipaSpotify() {
             <MediaOutlet />
           </MediaPlayer>
           <MediaPlayer
-            className="w-1/4"
+            className="w-2/3 sm:w-1/4"
             title="Physical Loop"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
             load="eager"

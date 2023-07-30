@@ -2,7 +2,7 @@ import Category from "./category";
 
 export default function CategorySelector(props: any) {
   return (
-    <div className="flex items-center align-middle">
+    <div className="flex items-center align-middle flex-col md:flex-row">
       <Category
         name={"Games"}
         link={"/games"}

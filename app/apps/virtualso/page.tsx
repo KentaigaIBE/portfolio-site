@@ -6,11 +6,11 @@ export default function Virtualso() {
   const h2Class = "text-lg font-bold mb-4 text-blue-200";
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-black flex-col pw-24">
+    <main className="flex min-h-screen bg-white dark:bg-black flex-col">
       <SimpleTopbar title={"Virtualso"} upSrc={"/apps"}></SimpleTopbar>
       <TitleImage
         name={"Virtualso"}
-        textSize={"text-[125px] group-hover:text-[175px]"}
+        textSize={"text-[35px] sm:text-[50px] sm:text-[75px] md:text-[125px]"}
         textColor={"text-blue-300"}
         color={"bg-blue-200"}
         image={

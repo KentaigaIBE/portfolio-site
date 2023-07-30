@@ -8,22 +8,23 @@ export default function PsychophysiologyAndDesign() {
   const h2Class = "text-lg font-bold mb-4 text-blue-200";
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-black flex-col pw-24">
+    <main className="flex min-h-screen bg-white dark:bg-black flex-col">
       <SimpleTopbar
         title={"Psychophysiology and Design"}
         upSrc={"/essays"}
       ></SimpleTopbar>
       <TitleImage
         name={"Psychophysiology and Design"}
-        textSize={"text-[100px]"}
+        textSize={"text-[20px] sm:text-[25px] md:text-[65px]"}
         textColor={"text-blue-300"}
         color={"bg-blue-200"}
         image={
           "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/eyetracking_header.webp"
         }
+        className="mt-8 md:mt-12"
       ></TitleImage>
       {/* Body conent */}
-      <div className="text-black dark:text-white my-8 mx-4 w-3/4 self-center">
+      <div className="my-8 mx-4 w-3/4 self-center">
         <h1 className={h1Class} id="introduction">
           Introduction
         </h1>
@@ -373,34 +374,35 @@ export default function PsychophysiologyAndDesign() {
           What we found was quite interesting.
         </p>
         <br></br>
-        <span className="flex space-x-12 items-center">
+        <span className="flex flex-col justify-evenly sm:flex-row sm:space-x-8 space-y-8 sm:space-y-0 items-center">
           <Image
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/maddie-chart-2.webp"
             alt=""
             width={250}
             height={200}
-            className="h-fit border-blue-200 border-8 rounded-xl hover:scale-110 transition-transform duration-200"
+            className="h-fit sm:w-[40%] border-blue-200 border-8 rounded-xl hover:scale-110 transition-transform duration-200"
           ></Image>
           <Image
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/maddie-chart-1.webp"
             alt=""
             width={250}
             height={200}
-            className="h-fit border-blue-200 border-8 rounded-xl hover:scale-110 transition-transform duration-200"
+            className="h-fit sm:w-[40%] border-blue-200 border-8 rounded-xl hover:scale-110 transition-transform duration-200"
           ></Image>
-          <br></br>
-          <p>
-            The first chart on the left shows GSR data for the moment when the
-            dog growls at the boyfriend in the ad, a funny scene. We see here
-            that three out of the five participants experienced an elevation of
-            sweat levels at this point, indicating an emotional response. The
-            same can not be said for the sad parts of the video. On the right,
-            this shows the same GSR data towards the end of the video where we
-            see the dog grow old and its owner being affectionate. This moment
-            generate only one peak, and it was from a user who was experiencing
-            a high level of sweat as a baseline.
-          </p>
         </span>
+        <br></br>
+        <p>
+          The first chart on the left shows GSR data for the moment when the dog
+          growls at the boyfriend in the ad, a funny scene. We see here that
+          three out of the five participants experienced an elevation of sweat
+          levels at this point, indicating an emotional response. The same can
+          not be said for the sad parts of the video. On the right, this shows
+          the same GSR data towards the end of the video where we see the dog
+          grow old and its owner being affectionate. This moment generate only
+          one peak, and it was from a user who was experiencing a high level of
+          sweat as a baseline.
+        </p>
+
         <br></br>
         <FloatQuote
           lineColor="bg-blue-300"

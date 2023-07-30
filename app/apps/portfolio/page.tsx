@@ -6,11 +6,11 @@ export default function Portfolio() {
   const h1Class = "text-3xl font-bold mb-4 text-orange-300";
 
   return (
-    <main className="flex min-h-screen flex-col items-center pw-24 h-screen animated-gradient">
+    <main className="flex min-h-screen flex-col items-center">
       <SimpleTopbar title={"Portfolio Site"} upSrc={"/apps"}></SimpleTopbar>
       <TitleImage
         name={"Portfolio Site"}
-        textSize={"text-[125px] group-hover:text-[175px]"}
+        textSize={"text-[35px] sm:text-[50px] md:text-[125px]"}
         textColor={"text-white"}
         color={"bg-orange-200"}
         image={

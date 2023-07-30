@@ -1,18 +1,14 @@
 import ProjectPreview from "@/components/common/project-preview";
 import SimpleTopbar from "@/components/common/simple-topbar";
-import Link from "next/link";
 
 export default function Art() {
   return (
-    <main className="flex flex-col min-h-screen items-center pw-24 animated-gradient overflow-x-clip">
+    <main className="flex flex-col min-h-screen items-center overflow-x-clip">
       <SimpleTopbar title={"Art"} upSrc={"/"}></SimpleTopbar>
-      <h1 className="fixed top-2 text-orange-300 font-bold text-3xl z-50">
-        Art
-      </h1>
-      <div className="">
+      <div className="mt-8 md:mt-12">
         <ProjectPreview
           name={"Dua Lipa Spotify Canvases"}
-          textSize={"text-[75px] group-hover:text-[100px]"}
+          textSize={"text-[30px] md:text-[75px] md:group-hover:text-[100px]"}
           textColor={"text-pink-300"}
           link={"/art/dua-lipa-spotify"}
           color={"bg-slate-200"}
@@ -22,7 +18,7 @@ export default function Art() {
         ></ProjectPreview>
         <ProjectPreview
           name={"Take a Chance"}
-          textSize={"text-[125px] group-hover:text-[175px]"}
+          textSize={"text-[50px] md:text-[125px] md:group-hover:text-[175px]"}
           textColor={"text-indigo-300"}
           link={"/art/take-a-chance"}
           color={"bg-blue-200"}

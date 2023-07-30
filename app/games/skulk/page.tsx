@@ -7,7 +7,7 @@ export default function Skulk() {
       <SimpleTopbar title={"Skulk"} upSrc={"/games"}></SimpleTopbar>
       <TitleImage
         name={"Skulk"}
-        textSize={"text-[125px] group-hover:text-[175px]"}
+        textSize={"text-[75px] md:text-[125px]"}
         textColor={"text-slate-300"}
         color={"bg-slate-200"}
         image={

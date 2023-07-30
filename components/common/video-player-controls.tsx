@@ -35,7 +35,7 @@ export default function VideoPlayerControls(props: any) {
       aria-label="Media Controls"
     >
       <MediaControlGroup>
-        <h1 className="text-xl font-bold p-4">{props.title}</h1>
+        <h1 className="text-md md:text-xl font-bold p-4">{props.title}</h1>
       </MediaControlGroup>
       <MediaControlGroup className="flex relative">
         <MediaPlayButton
