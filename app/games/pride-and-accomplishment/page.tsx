@@ -129,13 +129,21 @@ export default function PrideAndAccomplishment() {
         <div className="relative md:left-1/4 md:w-1/2 my-8">
           <MediaPlayer
             title="Pride and Accomplishment Demo"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
             load="idle"
             autoplay
             muted
             loop
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
           </MediaPlayer>
         </div>
         <h1 className={h1Class} id="the-process">

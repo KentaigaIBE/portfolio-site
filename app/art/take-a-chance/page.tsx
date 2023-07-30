@@ -92,11 +92,19 @@ export default function TakeAChance() {
         <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
           <MediaPlayer
             title="Take a Chance Outro"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
             load="idle"
             className="aspect-video"
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
             <VideoPlayerControls title='"Take a Chance" Outro' />
           </MediaPlayer>
         </div>
@@ -111,11 +119,19 @@ export default function TakeAChance() {
         <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
           <MediaPlayer
             title="Take a Chance Live @ Kumler Chapel"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
             load="idle"
             className="aspect-video"
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
             <VideoPlayerControls title='"Take a Chance" Live @ Kumler Chapel' />
           </MediaPlayer>
         </div>
@@ -123,11 +139,19 @@ export default function TakeAChance() {
         <div className="relative mx-4 sm:mx-8 md:mx-24 mt-4 fullscreen:h-screen">
           <MediaPlayer
             title="Take a Chance Projection Map"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
             load="idle"
             className="aspect-video"
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
             <VideoPlayerControls title='"Take a Chance" Projection Map' />
           </MediaPlayer>
         </div>

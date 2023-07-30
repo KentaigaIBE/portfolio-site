@@ -49,38 +49,62 @@ export default function DuaLipaSpotify() {
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
             load="eager"
             controls
             autoplay
             muted
             loop
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
           </MediaPlayer>
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
             title="Break My Heart Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
             load="eager"
             controls
             autoplay
             muted
             loop
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
           </MediaPlayer>
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
             title="Physical Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
             load="eager"
             controls
             autoplay
             muted
             loop
           >
-            <MediaOutlet />
+            <MediaOutlet>
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
+                type="video/webm"
+              />
+            </MediaOutlet>
           </MediaPlayer>
         </div>
       </div>
