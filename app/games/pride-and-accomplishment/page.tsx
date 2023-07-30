@@ -174,7 +174,7 @@ export default function PrideAndAccomplishment() {
         </p>
         <CollapsibleBox
           title={"GameManager.cs, just one of the files I wrote for the games"}
-          barColor={"bg-gray-700"}
+          barColor={"bg-gray-200 dark:bg-gray-700"}
           backgroundColor={"bg-gray-800"}
         >
           <SyntaxHighlighter
