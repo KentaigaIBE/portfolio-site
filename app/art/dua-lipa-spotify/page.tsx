@@ -52,6 +52,7 @@ export default function DuaLipaSpotify() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
             load="eager"
+            playsinline
             controls
             autoplay
             muted
@@ -63,6 +64,7 @@ export default function DuaLipaSpotify() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.mp4"
             load="eager"
+            playsinline
             controls
             autoplay
             muted
@@ -74,6 +76,7 @@ export default function DuaLipaSpotify() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.mp4"
             load="eager"
+            playsinline
             controls
             autoplay
             muted

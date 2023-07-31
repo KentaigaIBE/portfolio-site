@@ -96,6 +96,7 @@ export default function TakeAChance() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.mp4"
             load="idle"
+            playsinline
             controls
             className="aspect-video"
           />
@@ -114,6 +115,7 @@ export default function TakeAChance() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.mp4"
             load="idle"
+            playsinline
             controls
             className="aspect-video"
           />
@@ -125,6 +127,7 @@ export default function TakeAChance() {
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.mp4"
             load="idle"
+            playsinline
             controls
             className="aspect-video"
           />
