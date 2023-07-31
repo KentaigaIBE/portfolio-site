@@ -51,12 +51,12 @@ export default function DuaLipaSpotify() {
             title="Levitating Loop"
             src={[
               {
-                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm",
-                type: "video/webm",
-              },
-              {
                 src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4",
                 type: "video/mp4",
+              },
+              {
+                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm",
+                type: "video/webm",
               },
             ]}
             load="eager"
