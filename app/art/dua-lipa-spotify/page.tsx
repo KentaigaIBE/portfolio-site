@@ -49,22 +49,23 @@ export default function DuaLipaSpotify() {
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
+            src={[
+              {
+                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm",
+                type: "video/webm",
+              },
+              {
+                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4",
+                type: "video/mp4",
+              },
+            ]}
             load="eager"
             controls
             autoplay
             muted
             loop
           >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
-                type="video/webm"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
-                type="video/mp4"
-              />
-            </MediaOutlet>
+            <MediaOutlet />
           </MediaPlayer>
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
