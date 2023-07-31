@@ -5,15 +5,12 @@
 
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
+import VideoPlayer from "@/components/common/video-player";
 import { MediaPlayer, MediaOutlet } from "@vidstack/react";
 import { MediaErrorEvent } from "vidstack";
 
 export default function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
-
-  function SwitchToBackupSrc(e: MediaErrorEvent, backupFile: string): void {
-    e.target.src = `https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/${backupFile}.mp4`;
-  }
 
   return (
     <main className="flex min-h-screen flex-col overflow-x-clip">
@@ -51,59 +48,42 @@ export default function DuaLipaSpotify() {
           Videos
         </h1>
         <div className="flex flex-col sm:flex-row mt-8 w-[98vw] justify-between items-center space-y-4">
-          <MediaPlayer
+          <VideoPlayer
             className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
             load="eager"
-            onError={(e) => SwitchToBackupSrc(e, "LevitatingLoop")}
+            autoplay
+            muted
+            loop
+          />
+          <VideoPlayer
+            className="w-2/3 sm:w-1/4"
+            title="Break My Heart Loop"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.mp4"
+            load="eager"
             controls
             autoplay
             muted
             loop
           >
             <MediaOutlet />
-          </MediaPlayer>
-          <MediaPlayer
-            className="w-2/3 sm:w-1/4"
-            title="Break My Heart Loop"
-            load="eager"
-            controls
-            autoplay
-            muted
-            loop
-          >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-          </MediaPlayer>
-          <MediaPlayer
+          </VideoPlayer>
+          <VideoPlayer
             className="w-2/3 sm:w-1/4"
             title="Physical Loop"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.mp4"
             load="eager"
             controls
             autoplay
             muted
             loop
           >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-          </MediaPlayer>
+            <MediaOutlet />
+          </VideoPlayer>
         </div>
       </div>
     </main>
