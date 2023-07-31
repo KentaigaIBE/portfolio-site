@@ -10,7 +10,7 @@ export default function VideoPlayer(props: any): React.JSX.Element {
 
   return (
     <MediaPlayer
-      className={props.className}
+      className={`relative + ${props.className}`}
       title={props.title}
       src={props.src}
       load={props.load}
