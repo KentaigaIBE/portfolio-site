@@ -7,7 +7,7 @@ import CollapsibleBox from "@/components/common/collapsible-box";
 import FloatQuote from "@/components/common/float-quote";
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
-import { MediaOutlet, MediaPlayer } from "@vidstack/react";
+import VideoPlayer from "@/components/common/video-player";
 import Link from "next/link";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { tomorrowNightEighties } from "react-syntax-highlighter/dist/cjs/styles/hljs";
@@ -127,24 +127,16 @@ export default function PrideAndAccomplishment() {
           admission.
         </p>
         <div className="relative md:left-1/4 md:w-1/2 my-8">
-          <MediaPlayer
+          <VideoPlayer
             title="Pride and Accomplishment Demo"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.mp4"
             load="idle"
+            playsinline
             autoplay
             muted
             loop
-          >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment-demo.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-          </MediaPlayer>
+          />
         </div>
         <h1 className={h1Class} id="the-process">
           The Process

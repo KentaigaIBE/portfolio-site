@@ -28,12 +28,10 @@ import {
 import { MdOutlineSpeed } from "react-icons/md";
 
 export default function VideoPlayerControls(props: any) {
+  const parentClass = `${props.className} opacity-0 can-control:opacity-100 pointer-events-none absolute inset-0 z-10 flex h-full flex-col justify-between text-white transition-opacity duration-200 ease-linear`;
+
   return (
-    <div
-      className="opacity-0 can-control:opacity-100 pointer-events-none absolute inset-0 z-10 flex h-full flex-col justify-between text-white transition-opacity duration-200 ease-linear"
-      role="group"
-      aria-label="Media Controls"
-    >
+    <div className={parentClass} role="group" aria-label="Media Controls">
       <MediaControlGroup>
         <h1 className="text-md md:text-xl font-bold p-4">{props.title}</h1>
       </MediaControlGroup>

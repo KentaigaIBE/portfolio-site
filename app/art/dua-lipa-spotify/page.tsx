@@ -6,8 +6,6 @@
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
 import VideoPlayer from "@/components/common/video-player";
-import { MediaPlayer, MediaOutlet } from "@vidstack/react";
-import { MediaErrorEvent } from "vidstack";
 
 export default function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
@@ -47,13 +45,14 @@ export default function DuaLipaSpotify() {
         <h1 className={h1Class} id="videos">
           Videos
         </h1>
-        <div className="flex flex-col sm:flex-row mt-8 w-[98vw] justify-between items-center space-y-4">
+        <div className="flex flex-col sm:flex-row mt-8 justify-between items-center space-y-4">
           <VideoPlayer
             className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
             backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
             load="eager"
+            controls
             autoplay
             muted
             loop
@@ -68,9 +67,7 @@ export default function DuaLipaSpotify() {
             autoplay
             muted
             loop
-          >
-            <MediaOutlet />
-          </VideoPlayer>
+          />
           <VideoPlayer
             className="w-2/3 sm:w-1/4"
             title="Physical Loop"
@@ -81,9 +78,7 @@ export default function DuaLipaSpotify() {
             autoplay
             muted
             loop
-          >
-            <MediaOutlet />
-          </VideoPlayer>
+          />
         </div>
       </div>
     </main>

@@ -5,6 +5,7 @@
 
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
+import VideoPlayer from "@/components/common/video-player";
 import VideoPlayerControls from "@/components/common/video-player-controls";
 import { MediaOutlet, MediaPlayer } from "@vidstack/react";
 import Image from "next/image";
@@ -90,23 +91,14 @@ export default function TakeAChance() {
         </p>
         <br></br>
         <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
-          <MediaPlayer
+          <VideoPlayer
             title="Take a Chance Outro"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.mp4"
             load="idle"
+            controls
             className="aspect-video"
-          >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-            <VideoPlayerControls title='"Take a Chance" Outro' />
-          </MediaPlayer>
+          />
         </div>
         <h1 className={h1Class} id="final-product">
           Final Product
@@ -117,43 +109,25 @@ export default function TakeAChance() {
         </p>
         <br></br>
         <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
-          <MediaPlayer
+          <VideoPlayer
             title="Take a Chance Live @ Kumler Chapel"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.mp4"
             load="idle"
+            controls
             className="aspect-video"
-          >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-            <VideoPlayerControls title='"Take a Chance" Live @ Kumler Chapel' />
-          </MediaPlayer>
+          />
         </div>
         <p>And here is the final video output that was projected:</p>
         <div className="relative mx-4 sm:mx-8 md:mx-24 mt-4 fullscreen:h-screen">
-          <MediaPlayer
+          <VideoPlayer
             title="Take a Chance Projection Map"
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
+            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.mp4"
             load="idle"
+            controls
             className="aspect-video"
-          >
-            <MediaOutlet>
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.mp4"
-                type="video/mp4"
-              />
-              <source
-                src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
-                type="video/webm"
-              />
-            </MediaOutlet>
-            <VideoPlayerControls title='"Take a Chance" Projection Map' />
-          </MediaPlayer>
+          />
         </div>
       </div>
     </main>
