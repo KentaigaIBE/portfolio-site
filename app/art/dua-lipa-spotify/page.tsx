@@ -6,9 +6,14 @@
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
 import { MediaPlayer, MediaOutlet } from "@vidstack/react";
+import { MediaErrorEvent } from "vidstack";
 
 export default function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
+
+  function SwitchToBackupSrc(e: MediaErrorEvent, backupFile: string): void {
+    e.target.src = `https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/${backupFile}.mp4`;
+  }
 
   return (
     <main className="flex min-h-screen flex-col overflow-x-clip">
@@ -49,17 +54,9 @@ export default function DuaLipaSpotify() {
           <MediaPlayer
             className="w-2/3 sm:w-1/4"
             title="Levitating Loop"
-            src={[
-              {
-                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4",
-                type: "video/mp4",
-              },
-              {
-                src: "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm",
-                type: "video/webm",
-              },
-            ]}
+            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
             load="eager"
+            onError={(e) => SwitchToBackupSrc(e, "LevitatingLoop")}
             controls
             autoplay
             muted
