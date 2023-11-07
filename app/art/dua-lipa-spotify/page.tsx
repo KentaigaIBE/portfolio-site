@@ -1,13 +1,10 @@
 "use client";
-{
-  /* Vidstack requires this until version 0.8 comes out */
-}
 
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
-import VideoPlayer from "@/components/common/video-player";
+import MuxPlayer from "@mux/mux-player-react/lazy";
 
-export default function DuaLipaSpotify() {
+export default async function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
 
   return (
@@ -46,39 +43,51 @@ export default function DuaLipaSpotify() {
           Videos
         </h1>
         <div className="flex flex-col sm:flex-row mt-8 justify-between items-center space-y-4">
-          <VideoPlayer
-            className="w-2/3 sm:w-1/4"
-            title="Levitating Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/LevitatingLoop.mp4"
-            load="eager"
-            playsinline
-            controls
-            autoplay
-            muted
-            loop
-          />
-          <VideoPlayer
-            className="w-2/3 sm:w-1/4"
+          <MuxPlayer
+            className="w-2/3 sm:w-1/4 aspect-[9/16]"
             title="Break My Heart Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/BreakMyHeartLoop.mp4"
-            load="eager"
-            playsinline
-            controls
-            autoplay
+            metadataVideoId="break-my-heart-loop"
+            metadataVideoTitle="Break My Heart Loop"
+            streamType="on-demand"
+            playbackId="fhYkZu800tdeAV1guFhfvchqxAQ4rU7AVmht8VojyNNU"
+            thumbnailTime={0}
+            placeholder="https://image.mux.com/fhYkZu800tdeAV1guFhfvchqxAQ4rU7AVmht8VojyNNU/thumbnail.webp?time=0&width=360&height=640"
+            accentColor="#F9A8D4"
+            primaryColor="#FFFFFF"
+            secondaryColor="#000000"
+            preload="auto"
             muted
             loop
           />
-          <VideoPlayer
-            className="w-2/3 sm:w-1/4"
+          <MuxPlayer
+            className="w-2/3 sm:w-1/4 aspect-[9/16]"
+            title="Levitating Loop"
+            metadataVideoId="levitating-loop"
+            metadataVideoTitle="Levitating Loop"
+            streamType="on-demand"
+            playbackId="Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw"
+            thumbnailTime={0}
+            placeholder="https://image.mux.com/Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw/thumbnail.webp?time=0&width=360&height=640"
+            accentColor="#F9A8D4"
+            primaryColor="#FFFFFF"
+            secondaryColor="#000000"
+            preload="auto"
+            muted
+            loop
+          />
+          <MuxPlayer
+            className="w-2/3 sm:w-1/4 aspect-[9/16]"
             title="Physical Loop"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/PhysicalLoop.mp4"
-            load="eager"
-            playsinline
-            controls
-            autoplay
+            metadataVideoId="physical-loop"
+            metadataVideoTitle="Physical Loop"
+            streamType="on-demand"
+            playbackId="Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw"
+            thumbnailTime={0}
+            placeholder="https://image.mux.com/Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw/thumbnail.webp?time=0&width=360&height=640"
+            accentColor="#F9A8D4"
+            primaryColor="#FFFFFF"
+            secondaryColor="#000000"
+            preload="auto"
             muted
             loop
           />
