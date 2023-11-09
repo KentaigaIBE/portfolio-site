@@ -29,5 +29,8 @@
   },
   "devDependencies": {
     "@types/react-syntax-highlighter": "^15.5.7"
+  },
+  "overrides": {
+    "sharp": "^0.32.6"
   }
 }

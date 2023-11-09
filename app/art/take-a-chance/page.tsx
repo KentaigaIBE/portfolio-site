@@ -5,9 +5,7 @@
 
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
-import VideoPlayer from "@/components/common/video-player";
-import VideoPlayerControls from "@/components/common/video-player-controls";
-import { MediaOutlet, MediaPlayer } from "@vidstack/react";
+import MuxPlayer from "@mux/mux-player-react/lazy";
 import Image from "next/image";
 
 export default function TakeAChance() {
@@ -91,10 +89,9 @@ export default function TakeAChance() {
         </p>
         <br></br>
         <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
-          <VideoPlayer
+          <MuxPlayer
             title="Take a Chance Outro"
             src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.mp4"
             load="idle"
             playsinline
             controls

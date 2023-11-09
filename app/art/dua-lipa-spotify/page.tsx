@@ -1,8 +1,7 @@
-"use client";
-
+import LazyMux from "@/components/common/mux-player-passthrough";
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
-import MuxPlayer from "@mux/mux-player-react/lazy";
+import muxBlurHash from "@mux/blurhash";
 
 export default async function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
@@ -43,51 +42,78 @@ export default async function DuaLipaSpotify() {
           Videos
         </h1>
         <div className="flex flex-col sm:flex-row mt-8 justify-between items-center space-y-4">
-          <MuxPlayer
+          <LazyMux
             className="w-2/3 sm:w-1/4 aspect-[9/16]"
             title="Break My Heart Loop"
             metadataVideoId="break-my-heart-loop"
             metadataVideoTitle="Break My Heart Loop"
             streamType="on-demand"
             playbackId="fhYkZu800tdeAV1guFhfvchqxAQ4rU7AVmht8VojyNNU"
+            aspectRatio={9 / 16}
             thumbnailTime={0}
-            placeholder="https://image.mux.com/fhYkZu800tdeAV1guFhfvchqxAQ4rU7AVmht8VojyNNU/thumbnail.webp?time=0&width=360&height=640"
+            placeholder={
+              (
+                await muxBlurHash(
+                  "fhYkZu800tdeAV1guFhfvchqxAQ4rU7AVmht8VojyNNU",
+                  { time: 0 }
+                )
+              ).blurHashBase64
+            }
             accentColor="#F9A8D4"
             primaryColor="#FFFFFF"
             secondaryColor="#000000"
             preload="auto"
+            autoPlay
             muted
             loop
           />
-          <MuxPlayer
+          <LazyMux
             className="w-2/3 sm:w-1/4 aspect-[9/16]"
             title="Levitating Loop"
             metadataVideoId="levitating-loop"
             metadataVideoTitle="Levitating Loop"
             streamType="on-demand"
             playbackId="Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw"
+            aspectRatio={9 / 16}
             thumbnailTime={0}
-            placeholder="https://image.mux.com/Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw/thumbnail.webp?time=0&width=360&height=640"
+            placeholder={
+              (
+                await muxBlurHash(
+                  "Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw",
+                  { time: 0 }
+                )
+              ).blurHashBase64
+            }
             accentColor="#F9A8D4"
             primaryColor="#FFFFFF"
             secondaryColor="#000000"
             preload="auto"
+            autoPlay
             muted
             loop
           />
-          <MuxPlayer
+          <LazyMux
             className="w-2/3 sm:w-1/4 aspect-[9/16]"
             title="Physical Loop"
             metadataVideoId="physical-loop"
             metadataVideoTitle="Physical Loop"
             streamType="on-demand"
             playbackId="Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw"
+            aspectRatio={9 / 16}
             thumbnailTime={0}
-            placeholder="https://image.mux.com/Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw/thumbnail.webp?time=0&width=360&height=640"
+            placeholder={
+              (
+                await muxBlurHash(
+                  "Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw",
+                  { time: 0 }
+                )
+              ).blurHashBase64
+            }
             accentColor="#F9A8D4"
             primaryColor="#FFFFFF"
             secondaryColor="#000000"
             preload="auto"
+            autoPlay
             muted
             loop
           />
