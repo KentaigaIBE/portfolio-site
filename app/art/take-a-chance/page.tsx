@@ -1,14 +1,11 @@
-"use client";
-{
-  /* Vidstack requires this until version 0.8 comes out */
-}
-
+import LazyMux from "@/components/common/mux-player-passthrough";
 import SimpleTopbar from "@/components/common/simple-topbar";
 import TitleImage from "@/components/common/title-image";
+import muxBlurHash from "@mux/blurhash";
 import MuxPlayer from "@mux/mux-player-react/lazy";
 import Image from "next/image";
 
-export default function TakeAChance() {
+export default async function TakeAChance() {
   const h1Class = "text-3xl font-bold mb-4 text-indigo-300";
 
   return (
@@ -88,16 +85,30 @@ export default function TakeAChance() {
           result of my work can be seen below.
         </p>
         <br></br>
-        <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
-          <MuxPlayer
-            title="Take a Chance Outro"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-outro.webm"
-            load="idle"
-            playsinline
-            controls
-            className="aspect-video"
-          />
-        </div>
+        <LazyMux
+          className="relative mx-4 sm:mx-8 md:mx-24 mb-4"
+          title="Take a Chance Outro"
+          metadataVideoId="take-a-chance-outro"
+          metadataVideoTitle="Take a Chance Outro"
+          streamType="on-demand"
+          playbackId="Ink88jXmD1ZAEaE8UCSvI95RY018zXHagTTnLjnPQ4N4"
+          aspectRatio={16 / 9}
+          thumbnailTime={45}
+          placeholder={
+            (
+              await muxBlurHash(
+                "Ink88jXmD1ZAEaE8UCSvI95RY018zXHagTTnLjnPQ4N4",
+                {
+                  time: 45,
+                }
+              )
+            ).blurHashBase64
+          }
+          accentColor="#818CF8"
+          primaryColor="#FFFFFF"
+          secondaryColor="#000000"
+          preload="auto"
+        />
         <h1 className={h1Class} id="final-product">
           Final Product
         </h1>
@@ -106,29 +117,52 @@ export default function TakeAChance() {
           an auidence. Here is a recording of it:
         </p>
         <br></br>
-        <div className="relative mx-4 sm:mx-8 md:mx-24 mb-4 fullscreen:h-screen">
-          <VideoPlayer
-            title="Take a Chance Live @ Kumler Chapel"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/kumler-chapel-take-a-chance.mp4"
-            load="idle"
-            playsinline
-            controls
-            className="aspect-video"
-          />
-        </div>
+        <LazyMux
+          className="relative mx-4 sm:mx-8 md:mx-24 mb-4"
+          title="Take a Chance Live @ Kumler Chapel"
+          metadataVideoId="take-a-chance-live"
+          metadataVideoTitle="Take a Chance Live @ Kumler Chapel"
+          streamType="on-demand"
+          playbackId="2qX1VevXcZKxJf2yUjdX7GwCMrBc3Ak7PpTxk487csU"
+          aspectRatio={16 / 9}
+          thumbnailTime={30}
+          placeholder={
+            (
+              await muxBlurHash("2qX1VevXcZKxJf2yUjdX7GwCMrBc3Ak7PpTxk487csU", {
+                time: 30,
+              })
+            ).blurHashBase64
+          }
+          accentColor="#818CF8"
+          primaryColor="#FFFFFF"
+          secondaryColor="#000000"
+          preload="auto"
+        />
         <p>And here is the final video output that was projected:</p>
-        <div className="relative mx-4 sm:mx-8 md:mx-24 mt-4 fullscreen:h-screen">
-          <VideoPlayer
-            title="Take a Chance Projection Map"
-            src="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.webm"
-            backupSrc="https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-projection-map-final.mp4"
-            load="idle"
-            playsinline
-            controls
-            className="aspect-video"
-          />
-        </div>
+        <LazyMux
+          className="relative mx-4 sm:mx-8 md:mx-24 my-4"
+          title="Take a Chance Projection Map"
+          metadataVideoId="take-a-chance-projection-map"
+          metadataVideoTitle="Take a Chance Projection Map"
+          streamType="on-demand"
+          playbackId="Lk7Na0202FYU01Kg202GL3z7VyUtchd3zugVKDefNkwna9Q"
+          aspectRatio={8 / 5}
+          thumbnailTime={15}
+          placeholder={
+            (
+              await muxBlurHash(
+                "Lk7Na0202FYU01Kg202GL3z7VyUtchd3zugVKDefNkwna9Q",
+                {
+                  time: 15,
+                }
+              )
+            ).blurHashBase64
+          }
+          accentColor="#818CF8"
+          primaryColor="#FFFFFF"
+          secondaryColor="#000000"
+          preload="auto"
+        />
       </div>
     </main>
   );

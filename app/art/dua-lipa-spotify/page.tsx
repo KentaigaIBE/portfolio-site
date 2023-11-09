@@ -98,13 +98,13 @@ export default async function DuaLipaSpotify() {
             metadataVideoId="physical-loop"
             metadataVideoTitle="Physical Loop"
             streamType="on-demand"
-            playbackId="Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw"
+            playbackId="KOXx01jfx9kLhody94DHhDHwYj7W6jxbvyaHA7jOXkbY"
             aspectRatio={9 / 16}
             thumbnailTime={0}
             placeholder={
               (
                 await muxBlurHash(
-                  "Ebb00cM5sj7zw021DdZPyAbPQlYYdWRoM1YKGolrEjuvw",
+                  "KOXx01jfx9kLhody94DHhDHwYj7W6jxbvyaHA7jOXkbY",
                   { time: 0 }
                 )
               ).blurHashBase64
