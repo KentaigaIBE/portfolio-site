@@ -289,11 +289,7 @@ export default async function PrideAndAccomplishment() {
           src="https://itch.io/embed/1311842?bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636"
           width="552"
           height="167"
-        >
-          <Link href="https://kentaiga.itch.io/pride-and-accomplishment">
-            Pride and Accomplishment by Kentaiga
-          </Link>
-        </iframe>
+        ></iframe>
       </div>
     </main>
   );
