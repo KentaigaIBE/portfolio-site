@@ -26,6 +26,16 @@ export default function Art() {
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/take-a-chance-wormhole.webp"
           }
         ></ProjectPreview>
+        <ProjectPreview
+          name={"University Loops"}
+          textSize={"text-[50px] md:text-[125px] md:group-hover:text-[175px]"}
+          textColor={"text-red-300"}
+          link={"/art/university-loops"}
+          color={"bg-red-200"}
+          image={
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/Loop6Thumbnail.webp"
+          }
+        ></ProjectPreview>
       </div>
     </main>
   );
