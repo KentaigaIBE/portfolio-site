@@ -7,7 +7,7 @@ export default function Virtualso() {
 
   return (
     <main className="flex min-h-screen bg-white dark:bg-black flex-col">
-      <SimpleTopbar title={"Virtualso"} upSrc={"/apps"}></SimpleTopbar>
+      <SimpleTopbar title={"Virtualso"} upSrc={"/design"}></SimpleTopbar>
       <TitleImage
         name={"Virtualso"}
         textSize={"text-[35px] sm:text-[50px] sm:text-[75px] md:text-[125px]"}

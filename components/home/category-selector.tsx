@@ -20,8 +20,8 @@ export default function CategorySelector(props: any) {
         }
       ></Category>
       <Category
-        name={"Apps"}
-        link={"/apps"}
+        name={"Design"}
+        link={"/design"}
         color={"bg-green-200"}
         image={
           "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/virtualso-scope-analysis.webp"

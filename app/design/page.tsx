@@ -12,7 +12,7 @@ export default function Apps() {
             "text-[35px] sm:text-[50px] md:text-[125px] md:group-hover:text-[175px]"
           }
           textColor={"text-blue-300"}
-          link={"/apps/virtualso"}
+          link={"/design/virtualso"}
           color={"bg-blue-200"}
           blurOnHover
           image={
@@ -25,7 +25,7 @@ export default function Apps() {
             "text-[35px] sm:text-[50px] md:text-[125px] md:group-hover:text-[175px]"
           }
           textColor={"text-white"}
-          link={"/apps/portfolio"}
+          link={"/design/portfolio"}
           color={"bg-orange-200"}
           blurOnHover
           image={

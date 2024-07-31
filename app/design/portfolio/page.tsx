@@ -7,7 +7,7 @@ export default function Portfolio() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <SimpleTopbar title={"Portfolio Site"} upSrc={"/apps"}></SimpleTopbar>
+      <SimpleTopbar title={"Portfolio Site"} upSrc={"/design"}></SimpleTopbar>
       <TitleImage
         name={"Portfolio Site"}
         textSize={"text-[35px] sm:text-[50px] md:text-[125px]"}
