@@ -9,7 +9,7 @@ export default async function TakeAChance() {
   const h1Class = "text-3xl font-bold mb-4 text-indigo-300";
 
   return (
-    <main className="flex bg-white dark:bg-black min-h-screen flex-col pw-24 overflow-x-clip">
+    <main className="flex bg-white dark:bg-black min-h-screen flex-col pw-24 overflow-x-clip items-center">
       <SimpleTopbar title={"Take a Chance"} upSrc={"/art"}></SimpleTopbar>
       <TitleImage
         name={"Take a Chance Projection Mapping Project"}
@@ -22,7 +22,7 @@ export default async function TakeAChance() {
         }
       ></TitleImage>
       {/* Body conent */}
-      <div className="flex flex-col mt-8 mx-4">
+      <div className="flex flex-col mt-8 mx-4 w-3/4 ">
         <h1 className={h1Class} id="overview">
           Overview
         </h1>

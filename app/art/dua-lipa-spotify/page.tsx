@@ -7,7 +7,7 @@ export default async function DuaLipaSpotify() {
   const h1Class = "text-3xl font-bold mb-4 text-pink-300";
 
   return (
-    <main className="flex min-h-screen flex-col overflow-x-clip">
+    <main className="flex min-h-screen flex-col overflow-x-clip items-center">
       <SimpleTopbar
         title={"Dua Lipa Spotify Canvases"}
         upSrc={"/art"}
@@ -23,7 +23,7 @@ export default async function DuaLipaSpotify() {
         }
       ></TitleImage>
       {/* Body conent */}
-      <div className="my-8 mx-8">
+      <div className="my-8 mx-8 w-3/4">
         <h1 className={h1Class} id="overview">
           Overview
         </h1>
