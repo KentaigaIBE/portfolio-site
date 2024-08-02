@@ -17,6 +17,18 @@ export default function Games() {
           }
         ></ProjectPreview>
         <ProjectPreview
+          name={"Blessed are the Meek"}
+          textSize={
+            "text-[25px] sm:text-[35px] md:text-[75px] md:group-hover:text-[100px]"
+          }
+          textColor={"text-blue-400"}
+          link={"/games/blessed-are-the-meek"}
+          color={"bg-blue-300"}
+          image={
+            "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/blessed-are-the-meek-library.webp"
+          }
+        ></ProjectPreview>
+        <ProjectPreview
           name={"Pride And Accomplishment"}
           textSize={
             "text-[25px] sm:text-[35px] md:text-[75px] md:group-hover:text-[100px]"
