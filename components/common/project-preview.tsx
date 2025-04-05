@@ -8,7 +8,7 @@ export default function ProjectPreview(props: any) {
   let imageClass =
     "w-full h-full opacity-50 group-hover:opacity-100 transition-all duration-500 z-0 object-cover";
   if (props.blurOnHover) {
-    imageClass += " blur-0 group-hover:blur-sm";
+    imageClass += " blur-0 group-hover:blur-xs";
   }
 
   return (

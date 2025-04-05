@@ -43,7 +43,7 @@ export default async function DuaLipaSpotify() {
         </h1>
         <div className="flex flex-col sm:flex-row mt-8 justify-between items-center space-y-4">
           <LazyMux
-            className="w-2/3 sm:w-1/4 aspect-[9/16]"
+            className="w-2/3 sm:w-1/4 aspect-9/16"
             title="Break My Heart Loop"
             metadataVideoId="break-my-heart-loop"
             metadataVideoTitle="Break My Heart Loop"
@@ -68,7 +68,7 @@ export default async function DuaLipaSpotify() {
             loop
           />
           <LazyMux
-            className="w-2/3 sm:w-1/4 aspect-[9/16]"
+            className="w-2/3 sm:w-1/4 aspect-9/16"
             title="Levitating Loop"
             metadataVideoId="levitating-loop"
             metadataVideoTitle="Levitating Loop"
@@ -93,7 +93,7 @@ export default async function DuaLipaSpotify() {
             loop
           />
           <LazyMux
-            className="w-2/3 sm:w-1/4 aspect-[9/16]"
+            className="w-2/3 sm:w-1/4 aspect-9/16"
             title="Physical Loop"
             metadataVideoId="physical-loop"
             metadataVideoTitle="Physical Loop"
