@@ -11,9 +11,10 @@ export default function Essays() {
           textSize={
             "text-[20px] sm:text-[25px] md:text-[65px] md:group-hover:text-[100px]"
           }
-          textColor={"text-blue-300"}
+          textColor={"text-amber-300"}
           link={"/essays/psychophysiology-and-design"}
           color={"bg-blue-200"}
+          blurOnHover
           image={
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/eyetracking_header.webp"
           }
