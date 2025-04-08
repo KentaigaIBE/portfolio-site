@@ -4,8 +4,8 @@ import TitleImage from "@/components/common/title-image";
 import Image from "next/image";
 
 export default function PsychophysiologyAndDesign() {
-  const h1Class = "text-3xl font-bold mb-4 text-blue-300";
-  const h2Class = "text-lg font-bold mb-4 text-blue-200";
+  const h1Class = "text-3xl font-bold mb-4 text-amber-300";
+  const h2Class = "text-lg font-bold mb-4 text-amber-200";
 
   return (
     <main className="flex min-h-screen bg-white dark:bg-black flex-col">
@@ -16,7 +16,7 @@ export default function PsychophysiologyAndDesign() {
       <TitleImage
         name={"Psychophysiology and Design"}
         textSize={"text-[20px] sm:text-[25px] md:text-[65px]"}
-        textColor={"text-blue-300"}
+        textColor={"text-amber-300"}
         color={"bg-blue-200"}
         image={
           "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/eyetracking_header.webp"

@@ -9,9 +9,10 @@ export default function Games() {
         <ProjectPreview
           name={"Skulk"}
           textSize={"text-[75px] md:text-[125px] md:group-hover:text-[175px]"}
-          textColor={"text-slate-300"}
+          textColor={"text-sky-300"}
           link={"/games/skulk"}
           color={"bg-slate-200"}
+          blurOnHover
           image={
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/skulk-forest-screenshot.webp"
           }
@@ -23,7 +24,8 @@ export default function Games() {
           }
           textColor={"text-blue-400"}
           link={"/games/blessed-are-the-meek"}
-          color={"bg-blue-300"}
+          color={"bg-red-300"}
+          blurOnHover
           image={
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/blessed-are-the-meek-library.webp"
           }
@@ -33,9 +35,10 @@ export default function Games() {
           textSize={
             "text-[25px] sm:text-[35px] md:text-[75px] md:group-hover:text-[100px]"
           }
-          textColor={"text-blue-300"}
+          textColor={"text-orange-300"}
           link={"/games/pride-and-accomplishment"}
           color={"bg-blue-200"}
+          blurOnHover
           image={
             "https://kentaiga-portfolio-images.s3.us-east-2.amazonaws.com/pride-and-accomplishment.webp"
           }
